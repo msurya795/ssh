@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>dropend sub dropend</title>
+        <style>
+            #nav
+            {
+                list-style-type: none;
+                overflow: hidden;
+                background-color: red;
+            }
+           #nav li
+            {
+                float:left;
+                 
+               
+            }
+            #nav li a
+            {
+                text-decoration: none;
+                display: block;
+                padding: 20px;
+                position:relative;
+                
+            }
+            #nav li a:hover
+            {
+                background-color:green;
+            }
+    
+            #nav2
+            {
+               position: absolute;
+               display: none;
+               width: 170px;
+               background-color: red;
+               list-style-type: none;
+            }
+            #nav li:hover #nav2
+            {
+                display: block;
+            }
+            
+            .submenu {
+    position: absolute;
+    left:170px;
+    top: 50px;
+    display: none;
+    
+    background-color: red;
+    list-style-type: none;
+}
+
+/* First dropdown (Products) */
+#nav li:hover > .submenu {
+    display: block;
+}
+
+/* Nested dropdown (Product 2) */
+.submenu li {
+    position: relative;
+}
+
+.submenu .submenu {
+    left: 100%;   /* pushes it to the right */
+    top: 0;
+}
+
+/* Show only when hovering Product 2 */
+.submenu li:hover > .submenu {
+    display: block;
+}
+           
+        </style>
+    </head>
+    <body>
+        <ul id="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">Products</a>
+               <ul id="nav2">
+                    <li><a href="#">Product 1</a></li>
+                    <li><a href="#">Product 2</a>
+                        <ul class="submenu">
+                            <li><a href="#"> subproduct1</a></li>
+                            <li><a href="#"> subproduct2</a></li>
+                        </ul>
+                    </li>
+               </ul>
+            </li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+        
+    </body>
+
+</html>
