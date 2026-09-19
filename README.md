@@ -1,0 +1,2 @@
+# ssh
+my static project
