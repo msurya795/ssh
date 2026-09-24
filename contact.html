@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <script src="js/bootstrap.bundle.js"></script>
+        <style>
+            .nav-link:hover {
+                background-color: #ff7200;
+                color: white !important;
+            }
+            .contact-box {
+                background: #f8f9fa;
+                border: 1px solid #e9ecef;
+                border-radius: 12px;
+                padding: 30px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            }
+            .info-card {
+                background: linear-gradient(135deg, #0f1344, #1d235d);
+                color: white;
+                border-radius: 12px;
+                padding: 30px;
+            }
+            .btn-primary-custom {
+                background-color: #ff7200;
+                border-color: #ff7200;
+            }
+            .btn-primary-custom:hover {
+                background-color: #d95d00;
+                border-color: #d95d00;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col-6">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-auto">
+                            <img src="img/title.jpg" alt="Sunil Singh Hatchery">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ms-5 me-0"><a class="nav-link text-dark px-4" href="index.html">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark px-4" href="about.html">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark px-4" href="pricelist.html">PRICE LIST</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark px-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">PRODUCTS</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Farm Baby Chicken</a></li>
+                                    <li><a class="dropdown-item" href="#">Desi Chicks</a></li>
+                                    <li><a class="dropdown-item" href="#">Infertile Eggs</a></li>
+                                    <li><a class="dropdown-item" href="#">Poultry Feed</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link text-dark px-4" href="contact.html">CONTACT US</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark px-4" href="#">LOGIN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <img src="img/sb4.jpg" class="img-fluid p-0" style="height: 300px; object-fit: cover;">
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h1 class="fw-bold">Contact Us</h1>
+                    <p class="text-muted mb-0">We are here to help you with your poultry needs.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <div class="info-card h-100">
+                        <h3 class="mb-4">Sunil Singh Hatchery India Private Limited</h3>
+                        <p class="mb-3"><i class="fa fa-map-marker me-2"></i> E Part 4, Near CIPET Engineering College Industrial Area, Vaishali, Hajipur - 844101, Bihar, India</p>
+                        <p class="mb-3"><i class="fa fa-phone me-2"></i> +91-9905384910, +91-9102737967</p>
+                        <p class="mb-3"><i class="fa fa-envelope me-2"></i> info@sunilhatchery.com</p>
+                        <p class="mb-3"><i class="fa fa-clock-o me-2"></i> Monday - Sunday: 9:00 AM - 8:00 PM</p>
+                        <div class="mt-4">
+                            <h5>Follow Us</h5>
+                            <div class="d-flex gap-3 mt-3">
+                                <a href="#" class="text-white fs-4"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="text-white fs-4"><i class="fa fa-instagram"></i></a>
+                                <a href="#" class="text-white fs-4"><i class="fa fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="contact-box">
+                        <h3 class="mb-4">Send us a message</h3>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" placeholder="Your name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" placeholder="Your email">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Subject</label>
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-control" rows="5" placeholder="Write your message here..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary-custom text-white px-4">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-4 mb-0">
+            <div class="row border border-secondary bg-dark">
+                <div class="col-lg-4 col-md-12 col-sm-12 justify-content-center p-4">
+                    <h1 class="text-white">Like Us on Facebook</h1>
+                    <div class="fb-page"
+                        data-href="https://www.facebook.com/sunilsinghhatchery/?ref=embed_page#"
+                        data-tabs="timeline"
+                        data-width="500"
+                        data-height="600"
+                        data-small-header="false"
+                        data-adapt-container-width="true"
+                        data-hide-cover="false"
+                        data-show-facepile="true">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-sm-12 p-4">
+                    <h1 class="text-white mb-3 text-center">Product</h1>
+                    <ul class="list-unstyled text-center text-white">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Fresh Farm Baby Chicken</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Desi Chicks</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Vanjara Chicks</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Bakery Egg</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-12 col-sm-12 p-4">
+                    <h1 class="text-white mb-3 text-center">Information</h1>
+                    <p class="text-white text-center">
+                        <i class="fa fa-map-marker"></i> Sunil Singh Hatchery India Private Limited<br>
+                        E Part 4, Near CIPET Engineering College Industrial Area, Vaishali, Hajipur - 844101, Bihar, India<br>
+                        <i class="fa fa-mobile"></i> +91-9905384910 +91-9102737967<br>
+                        <i class="fa fa-envelope"></i> info@sunilhatchery.com
+                    </p>
+                </div>
+            </div>
+
+            <div class="row" style="background-color: #ff7200;">
+                <div class="col-8 text-center"><p class="text-white mb-0 py-3">© 2010 Sunil Singh Hatchery . All Rights Reserved</p></div>
+                <div class="col-4 text-center d-flex justify-content-center align-items-center gap-2 py-3">
+                    <p class="text-white mb-0">Designed & Developed by</p>
+                    <img src="img/namelogo.png" class="img-fluid" style="height: 30px;">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
